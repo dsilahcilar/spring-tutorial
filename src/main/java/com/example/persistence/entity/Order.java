@@ -10,6 +10,7 @@ import java.util.Date;
 @Getter
 @Setter
 @Entity
+@Table(name = "user_orders")
 public class Order {
     @Id
     private Long id;
