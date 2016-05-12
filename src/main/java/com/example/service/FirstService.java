@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 @Setter
 @Getter
 public class FirstService {
     private String name;
 
-    @Autowired
-    @Qualifier("fl")
+   // @Autowired
+   // @Qualifier("fl")
     private MyLogger myLogger;
 
     public String say(String str) {
