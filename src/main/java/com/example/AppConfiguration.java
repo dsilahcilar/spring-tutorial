@@ -3,9 +3,12 @@ package com.example;
 import com.example.service.FirstService;
 import com.example.service.MyLogger;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
+
+import javax.servlet.annotation.WebServlet;
 
 @Configuration
 public class AppConfiguration {
@@ -21,4 +24,6 @@ public class AppConfiguration {
         fs.setMyLogger(logger);
         return fs;
     }
+
+
 }
