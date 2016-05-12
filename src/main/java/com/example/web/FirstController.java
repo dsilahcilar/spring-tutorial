@@ -18,6 +18,7 @@ public class FirstController {
 
     @RequestMapping(path = "/")
     public String first() {
+
         System.out.println(firstService);
 
         firstService.setName("deniz");
